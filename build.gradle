@@ -13,6 +13,8 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
 jar {
 	baseName = 'rpc'
@@ -29,6 +31,8 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
     compile("org.projectlombok:lombok:1.16.10")
+    compile('org.springframework:spring-jms:3.0.5.RELEASE')
+    compile('org.apache.activemq:activemq-core:5.7.0')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

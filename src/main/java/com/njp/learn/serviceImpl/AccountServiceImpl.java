@@ -21,4 +21,11 @@ public class AccountServiceImpl implements AccountService {
     public List<Account> getAccounts() {
         return accounts;
     }
+
+    @Override
+    public long cancelAccount(long accountId) {
+   //     System.out.println("service account id : " + accountId);
+
+        return accountId;
+    }
 }

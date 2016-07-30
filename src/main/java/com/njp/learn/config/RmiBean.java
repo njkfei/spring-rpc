@@ -18,12 +18,6 @@ public class RmiBean {
     }
 
     /**
-     *     <property name="serviceName" value="AccountService"/>
-     <property name="service" ref="accountService"/>
-     <property name="serviceInterface" value="example.AccountService"/>
-     <!-- defaults to 1099 -->
-     <property name="registryPort" value="1199"/>
-     * @return
      */
     @Bean
     public RmiServiceExporter rmiServiceExporter(){
